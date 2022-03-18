@@ -20,13 +20,13 @@ const App = () => {
     }
 ])
 // add task
-const addTask = (task) => {
+
   const addTask = (task) => {
     const id = Math.floor(Math.random() * 100) + 1
     const newTask = { id, ...task }
     setTasks([...tasks, newTask])
   }
-}
+
 
 // delete task
 const deleteTask = (id) => {
